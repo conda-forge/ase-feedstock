@@ -20,6 +20,9 @@ requirements:
     - python
     - setuptools
     - flask
+    - matplotlib
+    - scipy
+    - numpy
   run:
     - python
     - numpy
