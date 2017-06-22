@@ -1,6 +1,6 @@
 {% set name = "ase" %}
-{% set version = "3.13.0" %}
-{% set sha256 = "c4046c50debac28415b36616d79aa28e68ae2cd03c013c2aed6a1e3d465c0ee1" %}
+{% set version = "3.14.0" %}
+{% set sha256 = "ce1cc75fd7c6f522ce11f569355eaf826f971bd16faabfeaca2cbe088d8a4423" %}
 
 package:
   name: {{ name|lower }}
@@ -14,7 +14,7 @@ source:
     - fix-vasp-py3.patch
 
 build:
-  number: 2
+  number: 0
   script: python setup.py install
 
 requirements:
