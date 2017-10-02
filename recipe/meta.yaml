@@ -23,14 +23,12 @@ requirements:
     - matplotlib
     - scipy
     - numpy
-    - itsdangerous
   run:
     - python
     - flask
     - numpy
     - matplotlib
     - scipy
-    - itsdangerous
 
 test:
   imports:
