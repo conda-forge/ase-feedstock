@@ -46,7 +46,7 @@ about:
   description: |
     ASE is a set of tools and Python modules for setting up, 
     manipulating, running, visualizing and analyzing atomistic simulations.
-    Python 2.6-3.5 
+    Python 2.6-3.6 
   doc_url: http://wiki.fysik.dtu.dk/ase
   dev_url: https://gitlab.com/ase/ase
 
