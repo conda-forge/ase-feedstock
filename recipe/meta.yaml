@@ -30,6 +30,7 @@ requirements:
     - numpy
     - matplotlib
     - scipy
+    - itsdangerous
 
 test:
   imports:
