@@ -19,10 +19,9 @@ requirements:
   build:
     - python
     - setuptools
-    - flask
+    - flask >=0.12.2
     - matplotlib
     - scipy
-    - itsdangerous  # [py<36]
   run:
     - python
     - flask
