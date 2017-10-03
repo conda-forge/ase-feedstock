@@ -23,6 +23,7 @@ requirements:
     - matplotlib
     - scipy
     - numpy
+    - itsdangerous  # [py<36]
   run:
     - python
     - flask
