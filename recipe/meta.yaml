@@ -19,12 +19,13 @@ requirements:
   build:
     - python
     - setuptools
-    - flask 0.10.*
+    - flask 0.10.*  # [py<36]
+    - flask  # [py>=36]
     - matplotlib
     - scipy
   run:
     - python
-    - flask >=0.10
+    - flask
     - numpy 
     - matplotlib
     - scipy
