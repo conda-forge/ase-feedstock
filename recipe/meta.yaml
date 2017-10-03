@@ -19,15 +19,11 @@ requirements:
   build:
     - python
     - setuptools
-    - flask
-    - matplotlib
-    - scipy
-    - numpy
     - itsdangerous  # [py<36]
   run:
     - python
     - flask
-    - numpy
+    - numpy 
     - matplotlib
     - scipy
 
