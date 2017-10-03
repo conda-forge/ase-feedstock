@@ -21,6 +21,7 @@ requirements:
     - setuptools
     - flask
     - matplotlib
+    - scipy
     - itsdangerous  # [py<36]
   run:
     - python
