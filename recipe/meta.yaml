@@ -22,6 +22,9 @@ requirements:
       #    - flask 0.10.*  # [py<36]
       #    - flask  # [py>=36]
     - flask
+    - itsdangerous 0.24 py27_1  # [py=27]
+    - itsdangerous 0.24 py35_1  # [py=35]
+    - itsdangerous 0.24 py36_1  # [py=36]
     - matplotlib
     - scipy
   run:
