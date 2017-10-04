@@ -12,15 +12,18 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   script: python setup.py install
 
 requirements:
   build:
     - python
     - setuptools
-    - flask 0.10.*  # [py<36]
-    - flask  # [py>=36]
+    - flask
+    - itsdangerous 0.24 py27_1  # [py27]
+    - itsdangerous 0.24 py35_1  # [py35]
+    - werkzeug 0.12.2 py35_0  # [py35]
+    - werkzeug 0.12.2 py27_0  # [py27]
     - matplotlib
     - scipy
   run:
