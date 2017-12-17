@@ -17,7 +17,8 @@ build:
   number: 2
   script: 
     - pwd
-    - ls -l
+    - ls -lR ase
+    - cat /recipe_root/ngl_fix.patch 
     - patch -p1 -i /recipe_root/ngl_fix.patch
     - python setup.py install
 
