@@ -47,7 +47,8 @@ test:
   imports:
     - ase
   commands:
-    - ase test
+    - echo $DISPLAY
+    - DISPLAY="" ase test
 
 about:
   home: https://gitlab.com/ase/ase
