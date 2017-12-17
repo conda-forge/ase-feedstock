@@ -10,17 +10,12 @@ source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
-#  patches: 
-#    - ngl_fix.patch
+  patches: 
+    - ngl_fix.patch
 
 build:
   number: 2
-  script: 
-    - pwd
-    - ls -lR ase
-    - cat /recipe_root/ngl_fix.patch 
-    - patch -p1 -i /recipe_root/ngl_fix.patch
-    - python setup.py install
+  script: python setup.py install
 
 requirements:
   build:
