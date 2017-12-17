@@ -1,7 +1,6 @@
-diff --git ase/ase/visualize/ngl.py ase/ase/visualize/ngl.py
-index 6385ba83..4a31dcfe 100644
---- ase/ase/visualize/ngl.py
-+++ ase/ase/visualize/ngl.py
+diff -ru ase-1/ase/visualize/ngl.py ase-2/ase/visualize/ngl.py
+--- ase-1/ase/visualize/ngl.py
++++ ase-2/ase/visualize/ngl.py
 @@ -35,7 +35,9 @@ class NGLDisplay:
                                 args=['%dpx' % (xsize,), '%dpx' % (ysize,)])
          self.view.add_unitcell()
