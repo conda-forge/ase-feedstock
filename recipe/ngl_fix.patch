@@ -1,7 +1,7 @@
 diff -ru ase-1/ase/visualize/ngl.py ase-2/ase/visualize/ngl.py
 --- ase-1/ase/visualize/ngl.py
 +++ ase-2/ase/visualize/ngl.py
-@@ -35,7 +35,9 @@ class NGLDisplay:
+@@ -35,7 +35,9 @@
                                 args=['%dpx' % (xsize,), '%dpx' % (ysize,)])
          self.view.add_unitcell()
          self.view.add_spacefill()
