@@ -1,0 +1,14 @@
+diff --git a/ase/visualize/ngl.py b/ase/visualize/ngl.py
+index 6385ba83..4a31dcfe 100644
+--- a/ase/visualize/ngl.py
++++ b/ase/visualize/ngl.py
+@@ -35,7 +35,9 @@ class NGLDisplay:
+                                args=['%dpx' % (xsize,), '%dpx' % (ysize,)])
+         self.view.add_unitcell()
+         self.view.add_spacefill()
++        self.view.remove_ball_and_stick()
+         self.view.camera = 'orthographic'
++        self.view.parameters = { "clipDist": 0 }
+         self.view.update_spacefill(radiusType='covalent',
+                                    scale=0.8,
+                                    color_scheme=self.csel.value,
