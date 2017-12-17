@@ -16,7 +16,9 @@ source:
 build:
   number: 2
   script: 
-    - patch -p0 -i /recipe_root/ngl_fix.patch
+    - pwd
+    - ls -l
+    - patch -p1 -i /recipe_root/ngl_fix.patch
     - python setup.py install
 
 requirements:
