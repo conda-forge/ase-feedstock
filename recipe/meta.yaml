@@ -47,7 +47,8 @@ test:
   imports:
     - ase
   commands:
-    - DISPLAY="" ase test
+    - DISPLAY="" ase test  # [not win]
+    - ase test  # [win]
 
 about:
   home: https://gitlab.com/ase/ase
