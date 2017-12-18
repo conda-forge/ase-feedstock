@@ -31,8 +31,8 @@ requirements:
 #    - matplotlib 2.1.1 py27_0  # [py27]
 #    - matplotlib 2.1.1 py35_0  # [py35]
 #    - matplotlib 2.1.1 py36_0  # [py36]
-    - itsdangerous
-    - werkzeug
+#    - itsdangerous
+#    - werkzeug
     - matplotlib
     - scipy
   run:
