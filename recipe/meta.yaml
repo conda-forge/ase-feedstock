@@ -29,17 +29,6 @@ requirements:
     - python
     - flask 0.10.*  # [py<36]
     - flask  # [py>=36]
-#    - itsdangerous 0.24 py27_1  # [py27]
-#    - itsdangerous 0.24 py35_1  # [py35]
-#    - itsdangerous 0.24 py36_1  # [py36]
-#    - werkzeug 0.12.2 py27_0  # [py27]
-#    - werkzeug 0.12.2 py35_0  # [py35]
-#    - werkzeug 0.12.2 py36_0  # [py36]
-#    - matplotlib 2.1.1 py27_0  # [py27]
-#    - matplotlib 2.1.1 py35_0  # [py35]
-#    - matplotlib 2.1.1 py36_0  # [py36]
-#    - itsdangerous  # [py>35]
-#    - werkzeug  # [py>35]
     - matplotlib
     - numpy 
     - scipy
@@ -48,8 +37,9 @@ test:
   imports:
     - ase
   commands:
-    - DISPLAY="" ase test  # [not win]
-    - ase test  # [win]
+    - export DISPLAY=""   # [not win]
+    - ase test
+
 
 about:
   home: https://gitlab.com/ase/ase
