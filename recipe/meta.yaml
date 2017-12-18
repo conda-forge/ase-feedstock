@@ -28,7 +28,9 @@ requirements:
     - werkzeug 0.12.2 py27_0  # [py27]
     - werkzeug 0.12.2 py35_0  # [py35]
     - werkzeug 0.12.2 py36_0  # [py36]
-    - matplotlib
+    - matplotlib 2.1.1 py27_0  # [py27]
+    - matplotlib 2.1.1 py35_0  # [py35]
+    - matplotlib 2.1.1 py36_0  # [py36]
     - scipy
   run:
     - python
@@ -40,7 +42,9 @@ requirements:
     - werkzeug 0.12.2 py35_0  # [py35]
     - werkzeug 0.12.2 py36_0  # [py36]
     - numpy 
-    - matplotlib
+    - matplotlib 2.1.1 py27_0  # [py27]
+    - matplotlib 2.1.1 py35_0  # [py35]
+    - matplotlib 2.1.1 py36_0  # [py36]
     - scipy
 
 test:
