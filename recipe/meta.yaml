@@ -21,7 +21,8 @@ requirements:
   build:
     - python
     - setuptools
-    - flask
+    - flask 0.10.*  # [py<36]
+    - flask  # [py>=36]
 #    - itsdangerous 0.24 py27_1  # [py27]
 #    - itsdangerous 0.24 py35_1  # [py35]
 #    - itsdangerous 0.24 py36_1  # [py36]
