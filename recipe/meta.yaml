@@ -47,7 +47,6 @@ test:
   imports:
     - ase
   commands:
-    - echo $DISPLAY
     - DISPLAY="" ase test
 
 about:
