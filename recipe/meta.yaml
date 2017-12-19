@@ -10,34 +10,36 @@ source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
+  patches: 
+    - ngl_fix.patch
 
 build:
-  number: 1
+  number: 2
   script: python setup.py install
 
 requirements:
   build:
     - python
     - setuptools
-    - flask
-    - itsdangerous 0.24 py27_1  # [py27]
-    - itsdangerous 0.24 py35_1  # [py35]
-    - werkzeug 0.12.2 py35_0  # [py35]
-    - werkzeug 0.12.2 py27_0  # [py27]
+    - flask 0.10.*  # [py<36]
+    - flask  # [py>=36]
     - matplotlib
     - scipy
   run:
     - python
-    - flask
-    - numpy 
+    - flask 0.10.*  # [py<36]
+    - flask  # [py>=36]
     - matplotlib
+    - numpy 
     - scipy
 
 test:
   imports:
     - ase
   commands:
-    - python -m ase.test
+    - export DISPLAY=""   # [not win]
+    - ase test
+
 
 about:
   home: https://gitlab.com/ase/ase
