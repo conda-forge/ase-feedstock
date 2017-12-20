@@ -14,7 +14,7 @@ source:
     - ngl_fix.patch
 
 build:
-  number: 3
+  number: 4
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
