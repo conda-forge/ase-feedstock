@@ -14,21 +14,19 @@ source:
     - ngl_fix.patch
 
 build:
-  number: 2
-  script: python setup.py install
+  number: 3
+  script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
   build:
     - python
     - setuptools
-    - flask 0.10.*  # [py<36]
-    - flask  # [py>=36]
+    - flask
     - matplotlib
     - scipy
   run:
     - python
-    - flask 0.10.*  # [py<36]
-    - flask  # [py>=36]
+    - flask
     - matplotlib
     - numpy 
     - scipy
