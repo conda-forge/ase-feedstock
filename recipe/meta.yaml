@@ -1,6 +1,6 @@
 {% set name = "ase" %}
-{% set version = "3.15.0" %}
-{% set sha256 = "5e22d961b1311ef4ba2d83527f7cc7448abac8cf9bddd1593bee548459263fe8" %}
+{% set version = "3.16.0" %}
+{% set sha256 = "a999b7d95c0160092218b4d30380b14fa7993a5149183b80b0dda75f3470eea6" %}
 
 package:
   name: {{ name|lower }}
@@ -14,7 +14,7 @@ source:
     - ngl_fix.patch
 
 build:
-  number: 3
+  number: 0
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
