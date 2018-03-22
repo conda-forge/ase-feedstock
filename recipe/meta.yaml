@@ -1,6 +1,6 @@
 {% set name = "ase" %}
-{% set version = "3.15.0" %}
-{% set sha256 = "5e22d961b1311ef4ba2d83527f7cc7448abac8cf9bddd1593bee548459263fe8" %}
+{% set version = "3.16.0" %}
+{% set sha256 = "a999b7d95c0160092218b4d30380b14fa7993a5149183b80b0dda75f3470eea6" %}
 
 package:
   name: {{ name|lower }}
@@ -10,17 +10,25 @@ source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
-  patches: 
-    - ngl_fix.patch
 
 build:
-  number: 3
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  noarch: python
+  number: 0
+  #script: python setup.py install --single-version-externally-managed --record record.txt
+  script: python -m pip install --no-deps --ignore-installed . 
+  entry_points:
+    - ase=ase.cli.main:main
+    - ase-db=ase.cli.main:old
+    - ase-gui=ase.cli.main:old
+    - ase-run=ase.cli.main:old
+    - ase-info=ase.cli.main:old
+    - ase-build=ase.cli.main:old
 
 requirements:
   build:
     - python
     - setuptools
+    - pip
   run:
     - python
     - flask
@@ -33,7 +41,7 @@ test:
     - ase
   commands:
     - export DISPLAY=""   # [not win]
-    - ase test
+    - ase test -v
 
 
 about:
