@@ -15,7 +15,14 @@ build:
   noarch: python
   number: 0
   #script: python setup.py install --single-version-externally-managed --record record.txt
-  script: python -m pip install --no-deps --ignore-installed .  
+  script: python -m pip install --no-deps --ignore-installed . 
+  entry_points:
+    - ase=ase.cli.main:main
+    - ase-db=ase.cli.main:old
+    - ase-gui=ase.cli.main:old
+    - ase-run=ase.cli.main:old
+    - ase-info=ase.cli.main:old
+    - ase-build=ase.cli.main:old
 
 requirements:
   build:
