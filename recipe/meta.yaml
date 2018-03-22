@@ -41,7 +41,7 @@ test:
     - ase
   commands:
     - export DISPLAY=""   # [not win]
-    - python -m ase test -v
+    - ase test -v
 
 
 about:
