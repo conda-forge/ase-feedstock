@@ -17,12 +17,15 @@ Python 2.6-3.6
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/ase-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/ase-feedstock)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/ase-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/ase-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/ase/badges/version.svg)](https://anaconda.org/conda-forge/ase)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/ase/badges/downloads.svg)](https://anaconda.org/conda-forge/ase)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-ase-green.svg)](https://anaconda.org/conda-forge/ase) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/ase.svg)](https://anaconda.org/conda-forge/ase) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/ase.svg)](https://anaconda.org/conda-forge/ase) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/ase.svg)](https://anaconda.org/conda-forge/ase) |
 
 Installing ase
 ==============
