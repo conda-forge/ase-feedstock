@@ -13,8 +13,7 @@ source:
 
 build:
   noarch: python
-  number: 0
-  #script: python setup.py install --single-version-externally-managed --record record.txt
+  number: 2
   script: python -m pip install --no-deps --ignore-installed . 
   entry_points:
     - ase=ase.cli.main:main
@@ -27,7 +26,6 @@ build:
 requirements:
   build:
     - python
-    - setuptools
     - pip
   run:
     - python
@@ -40,9 +38,8 @@ test:
   imports:
     - ase
   commands:
-    - export DISPLAY=""   # [not win]
+    - export DISPLAY="" 
     - ase test -v
-
 
 about:
   home: https://gitlab.com/ase/ase
