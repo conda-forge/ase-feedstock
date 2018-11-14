@@ -1,6 +1,6 @@
 {% set name = "ase" %}
-{% set version = "3.16.2" %}
-{% set sha256 = "5e63e7dc18fd13dcc3cb46ab3de019375b9d62c6c3a845a99f34b6928251f4c2" %}
+{% set version = "3.17.0" %}
+{% set sha256 = "8fe49ddc5a554b69b6468dd1f45a29f67c61997319d0cb7e217e41a5aeef8fb4" %}
 
 package:
   name: {{ name|lower }}
