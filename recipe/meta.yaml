@@ -1,6 +1,6 @@
 {% set name = "ase" %}
-{% set version = "3.17.0" %}
-{% set sha256 = "8fe49ddc5a554b69b6468dd1f45a29f67c61997319d0cb7e217e41a5aeef8fb4" %}
+{% set version = "3.18.0" %}
+{% set sha256 = "39d45f12def2669605bffc82926acfb13a0d0610e6d82740fa316aafa70f97f9" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
   #script: python setup.py install --single-version-externally-managed --record record.txt
   script: python -m pip install --no-deps --ignore-installed . 
   entry_points:
