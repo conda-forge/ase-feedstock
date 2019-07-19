@@ -1,7 +1,3 @@
-<!--
-# -*- mode: jinja -*-
--->
-
 About ase
 =========
 
@@ -15,14 +11,21 @@ Summary: ASE is a python package providing an open source Atomic Simulation Envi
 
 ASE is a set of tools and Python modules for setting up,
 manipulating, running, visualizing and analyzing atomistic simulations.
-Python 2.6-3.6
+Python 3.5+
 
 
 Current build status
 ====================
 
-All platforms:
-[![noarch](https://img.shields.io/circleci/project/github/conda-forge/ase-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/ase-feedstock)
+
+<table><tr><td>All platforms:</td>
+    <td>
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=2717&branchName=master">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/ase-feedstock?branchName=master">
+      </a>
+    </td>
+  </tr>
+</table>
 
 Current release info
 ====================

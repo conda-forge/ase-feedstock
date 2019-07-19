@@ -1,6 +1,6 @@
 {% set name = "ase" %}
-{% set version = "3.17.0" %}
-{% set sha256 = "8fe49ddc5a554b69b6468dd1f45a29f67c61997319d0cb7e217e41a5aeef8fb4" %}
+{% set version = "3.18.0" %}
+{% set sha256 = "39d45f12def2669605bffc82926acfb13a0d0610e6d82740fa316aafa70f97f9" %}
 
 package:
   name: {{ name|lower }}
@@ -13,9 +13,8 @@ source:
 
 build:
   noarch: python
-  number: 1
-  #script: python setup.py install --single-version-externally-managed --record record.txt
-  script: python -m pip install --no-deps --ignore-installed . 
+  number: 0
+  script: "{{ PYTHON }} -m pip install . -vv"
   entry_points:
     - ase=ase.cli.main:main
     - ase-db=ase.cli.main:old
@@ -25,12 +24,12 @@ build:
     - ase-build=ase.cli.main:old
 
 requirements:
-  build:
-    - python
+  host:
+    - python >=3.5
     - setuptools
     - pip
   run:
-    - python
+    - python >=3.5
     - flask
     - matplotlib
     - numpy 
@@ -53,7 +52,7 @@ about:
   description: |
     ASE is a set of tools and Python modules for setting up, 
     manipulating, running, visualizing and analyzing atomistic simulations.
-    Python 2.6-3.6 
+    Python 3.5+
   doc_url: http://wiki.fysik.dtu.dk/ase
   dev_url: https://gitlab.com/ase/ase
 
