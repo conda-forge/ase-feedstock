@@ -26,11 +26,12 @@ build:
 
 requirements:
   build:
-    - python
     - setuptools
     - pip
+  host:
+    - python >= 3.5
   run:
-    - python
+    - python >= 3.5
     - flask
     - matplotlib
     - numpy 
@@ -53,7 +54,7 @@ about:
   description: |
     ASE is a set of tools and Python modules for setting up, 
     manipulating, running, visualizing and analyzing atomistic simulations.
-    Python 2.6-3.6 
+    Python >= 3.5
   doc_url: http://wiki.fysik.dtu.dk/ase
   dev_url: https://gitlab.com/ase/ase
 
