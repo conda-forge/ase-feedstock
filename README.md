@@ -11,7 +11,7 @@ Summary: ASE is a python package providing an open source Atomic Simulation Envi
 
 ASE is a set of tools and Python modules for setting up,
 manipulating, running, visualizing and analyzing atomistic simulations.
-Python 2.6-3.6
+Python 3.5+
 
 
 Current build status
