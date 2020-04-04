@@ -1,6 +1,6 @@
 {% set name = "ase" %}
-{% set version = "3.19.0" %}
-{% set sha256 = "a8378ab57e91cfe1ba09b3639d8409bb7fc1a40b59479c7822d206e673ad93f9" %}
+{% set version = "3.19.1" %}
+{% set sha256 = "839029ed5ad9590b40c74773b9aef4733bfd9f8300cf998011584cad6ebdbf0f" %}
 
 package:
   name: {{ name|lower }}
@@ -13,8 +13,8 @@ source:
 
 build:
   noarch: python
-  number: 1
-  script: "{{ PYTHON }} -m pip install . -vv"
+  number: 0
+  script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - ase=ase.cli.main:main
     - ase-db=ase.cli.main:old
@@ -32,7 +32,7 @@ requirements:
     - python >=3.5
     - flask
     - matplotlib-base
-    - numpy 
+    - numpy
     - scipy
 
 test:
@@ -47,7 +47,7 @@ about:
   home: https://gitlab.com/ase/ase
   license: LGPL-2.1+
   license_file: LICENSE
-  summary: 'ASE is a python package providing an open source Atomic Simulation Environment in the Python language.'
+  summary: ASE is a python package providing an open source Atomic Simulation Environment in the Python language.
 
   description: |
     ASE is a set of tools and Python modules for setting up, 
