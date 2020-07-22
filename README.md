@@ -3,9 +3,9 @@ About ase
 
 Home: https://gitlab.com/ase/ase
 
-Package license: LGPL-2.1+
+Package license: LGPL-2.1-or-later
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: ASE is a python package providing an open source Atomic Simulation Environment in the Python language.
 
