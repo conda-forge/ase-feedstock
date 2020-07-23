@@ -42,7 +42,6 @@ test:
     - export DISPLAY=""   # [not win]
     - ase test -v
 
-
 about:
   home: https://gitlab.com/ase/ase
   license: LGPL-2.1-or-later
