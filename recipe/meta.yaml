@@ -41,6 +41,8 @@ test:
   commands:
     - export DISPLAY=""   # [not win]
     - ase test -v
+  requires:
+    - pytest
 
 
 about:
