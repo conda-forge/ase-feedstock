@@ -36,6 +36,8 @@ requirements:
     - scipy
 
 test:
+  requires:
+    - pytest
   imports:
     - ase
   commands:
