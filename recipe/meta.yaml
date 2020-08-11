@@ -42,7 +42,7 @@ test:
     - ase
   commands:
     - export DISPLAY=""   # [not win]
-    - ase test -v
+    - ase test
 
 
 about:
