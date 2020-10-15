@@ -121,4 +121,3 @@ Feedstock Maintainers
 
 * [@CJ-Wright](https://github.com/CJ-Wright/)
 * [@jochym](https://github.com/jochym/)
-
