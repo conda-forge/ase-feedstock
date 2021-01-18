@@ -5,9 +5,13 @@ Home: https://gitlab.com/ase/ase
 
 Package license: LGPL-2.1-or-later
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ase-feedstock/blob/master/LICENSE.txt)
 
 Summary: ASE is a python package providing an open source Atomic Simulation Environment in the Python language.
+
+Development: https://gitlab.com/ase/ase
+
+Documentation: http://wiki.fysik.dtu.dk/ase
 
 ASE is a set of tools and Python modules for setting up,
 manipulating, running, visualizing and analyzing atomistic simulations.
@@ -121,3 +125,4 @@ Feedstock Maintainers
 
 * [@CJ-Wright](https://github.com/CJ-Wright/)
 * [@jochym](https://github.com/jochym/)
+
