@@ -38,6 +38,7 @@ requirements:
 test:
   requires:
     - pytest
+    - pytest-mock
   imports:
     - ase
   commands:
