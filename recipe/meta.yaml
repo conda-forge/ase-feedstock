@@ -43,7 +43,7 @@ test:
     - ase
   commands:
     - export DISPLAY=""   # [not win]
-    - ase test --pytest " --ignore=test/cli/test_bzplot.py "
+    - ase test --pytest " --ignore=ase/test/cli/test_bzplot.py "
 
 
 about:
