@@ -31,7 +31,7 @@ requirements:
   run:
     - python >=3.5
     - flask
-    - matplotlib-base
+    - matplotlib-base <3.5.0
     - numpy
     - scipy
 
