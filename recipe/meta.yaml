@@ -31,7 +31,7 @@ requirements:
   run:
     - python >=3.5
     - flask
-    - matplotlib-base <3.5.0
+    - matplotlib-base
     - numpy
     - scipy
 
@@ -43,7 +43,7 @@ test:
     - ase
   commands:
     - export DISPLAY=""   # [not win]
-    - ase test
+    - ase test --pytest " --ignore=cli/test_bzplot.py "
 
 
 about:
