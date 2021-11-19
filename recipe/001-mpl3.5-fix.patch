@@ -1,0 +1,21 @@
+--- ase/dft/bz.py
++++ ase/dft/bz.py
+@@ -53,6 +53,14 @@ def bz_plot(cell, vectors=False, paths=None, points=None,
+                 self.set_positions((xs[0], ys[0]), (xs[1], ys[1]))
+                 FancyArrowPatch.draw(self, renderer)
+ 
++            # FIXME: Compatibility fix for matplotlib 3.5.0: Handling of 3D
++            # artists have changed and all 3D artists now need
++            # "do_3d_projection". Since this class is a hack that manually
++            # projects onto the 3D axes we don't need to do anything in this
++            # method. Ideally we shouldn't resort to a hack like this.
++            def do_3d_projection(self, *_, **__):
++                return 0
++
+         azim = pi / 5
+         elev = elev or pi / 6
+         x = sin(azim)
+--
+
+
+
