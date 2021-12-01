@@ -1,6 +1,6 @@
 {% set name = "ase" %}
-{% set version = "3.22.0" %}
-{% set sha256 = "e60259c7b50867b1cb817caf938fcc1ed383702413df6d2e1afe7ea07f65acee" %}
+{% set version = "3.22.1" %}
+{% set sha256 = "004df6b0ea04b1114c790fadfe45d4125eb0e53125c66a93425af853d82ab432" %}
 
 package:
   name: {{ name|lower }}
@@ -11,11 +11,11 @@ source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
   patches:
-    - 001-mpl3.5-fix.patch
+    # - 001-mpl3.5-fix.patch
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - ase=ase.cli.main:main
