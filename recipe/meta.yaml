@@ -11,7 +11,7 @@ source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
   patches:
-    - 001-mpl3.5-fix.patch
+    # - 001-mpl3.5-fix.patch
 
 build:
   noarch: python
