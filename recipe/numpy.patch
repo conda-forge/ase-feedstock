@@ -1,0 +1,22 @@
+From 9be81004117f5d169ea0449da9ebff0d089cd9bb Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Jan=20Jan=C3=9Fen?= <janssen@mpie.de>
+Date: Fri, 18 Aug 2023 18:08:12 -0600
+Subject: [PATCH] numpy product patch
+
+---
+ ase/atoms.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/ase/atoms.py b/ase/atoms.py
+index 1b803a9..fec6bfb 100644
+--- a/ase/atoms.py
++++ b/ase/atoms.py
+@@ -1172,7 +1172,7 @@ def __imul__(self, m):
+                 raise ValueError('Cannot repeat along undefined lattice '
+                                  'vector')
+ 
+-        M = np.product(m)
++        M = np.prod(m)
+         n = len(self)
+ 
+         for name, a in self.arrays.items():
