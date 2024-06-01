@@ -1,6 +1,6 @@
 {% set name = "ase" %}
-{% set version = "3.22.1" %}
-{% set sha256 = "004df6b0ea04b1114c790fadfe45d4125eb0e53125c66a93425af853d82ab432" %}
+{% set version = "3.23.0" %}
+{% set sha256 = "91a2aa31d89bd90b0efdfe4a7e84264f32828b2abfc9f38e65e041ad76fec8ae" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - ase=ase.cli.main:main
