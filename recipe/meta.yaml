@@ -8,12 +8,12 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - ase=ase.cli.main:main
@@ -25,11 +25,11 @@ build:
 
 requirements:
   host:
-    - python >=3.5
+    - python {{ python_min }}
     - setuptools
     - pip
   run:
-    - python >=3.5
+    - python >={{ python_min }}
     - flask
     - matplotlib-base
     - numpy
@@ -39,6 +39,7 @@ test:
   requires:
     - pytest
     - pytest-mock
+    - python {{ python_min }}
   imports:
     - ase
   commands:
