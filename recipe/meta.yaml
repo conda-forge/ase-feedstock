@@ -1,6 +1,7 @@
 {% set name = "ase" %}
 {% set version = "3.23.0" %}
 {% set sha256 = "91a2aa31d89bd90b0efdfe4a7e84264f32828b2abfc9f38e65e041ad76fec8ae" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
@@ -25,11 +26,11 @@ build:
 
 requirements:
   host:
-    - python >=3.5
+    - python {{ python_min }}
     - setuptools
     - pip
   run:
-    - python >=3.5
+    - python >={{ python_min }}
     - flask
     - matplotlib-base
     - numpy
@@ -39,6 +40,7 @@ test:
   requires:
     - pytest
     - pytest-mock
+    - python {{ python_min }}
   imports:
     - ase
   commands:
@@ -63,3 +65,4 @@ extra:
   recipe-maintainers:
     - jochym
     - CJ-Wright
+    - jan-janssen
