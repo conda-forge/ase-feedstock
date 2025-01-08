@@ -153,5 +153,6 @@ Feedstock Maintainers
 =====================
 
 * [@CJ-Wright](https://github.com/CJ-Wright/)
+* [@jan-janssen](https://github.com/jan-janssen/)
 * [@jochym](https://github.com/jochym/)
 
