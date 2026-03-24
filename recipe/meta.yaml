@@ -31,7 +31,6 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - flask
     - matplotlib-base
     - numpy
     - scipy
