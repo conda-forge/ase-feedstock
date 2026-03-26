@@ -14,7 +14,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - ase=ase.cli.main:main
@@ -31,7 +31,6 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - flask
     - matplotlib-base
     - numpy
     - scipy
