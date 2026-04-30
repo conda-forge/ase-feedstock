@@ -17,7 +17,6 @@ ASE is a set of tools and Python modules for setting up,
 manipulating, running, visualizing and analyzing atomistic simulations.
 Python 3.5+
 
-
 Current build status
 ====================
 
